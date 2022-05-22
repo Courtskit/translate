@@ -1,4 +1,4 @@
-import { Form, Button, Card } from 'react-bootstrap'
+import { Form, Button, Card } from 'react-bootstrap';
 import { useState } from "react";
 
 export const Translate = () => {
@@ -48,18 +48,21 @@ export const Translate = () => {
     })
   };
 
-
   return (
-    <div className="formStyles">
+    <div className="form-styles">
+      <h1 className='translate'>translate</h1>
       <Form onSubmit={ handleTranslateForm } >
         <Form.Group className="mb-3">
-          <Form.Control name='inputPhrase' placeholder="Enter phrase here" as="textarea" />
+          <Form.Control name='inputPhrase' placeholder="Enter English phrase here" as="textarea" />
+          <Form.Text>1. French, 2. Spanish, 3. Japanese, and 4. Chinese </Form.Text>
+          <br/>
+          <Button variant="outline-primary" size="sm" type="submit"> Translate </Button>
+          <br/>
         </Form.Group>
-        <Button variant="outline-primary" size="sm" type="submit"> Translate </Button>
-        <br></br>
         { renderTranslations() }
       </Form>
     </div>
   )
 }
+
 export default Translate;
