@@ -14,8 +14,8 @@ export const Translate = () => {
     });
     const openai = new OpenAIApi(configuration);
     openai.createCompletion("text-davinci-002", {
-      prompt: `Translate this into 1. French, 2. Spanish, 3. Japanese, and 4. Chinese: ${promptData}`,
-      temperature: 0.3,
+      prompt: `Translate this ${promptData} 1. French, 2. Spanish, 3. Japanese, and 4. Chinese: ${promptData}`,
+      temperature: 0,
       max_tokens: 100,
       top_p: 1.0,
       frequency_penalty: 0.0,
