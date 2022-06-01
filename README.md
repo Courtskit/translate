@@ -1,2 +1,2 @@
 # translate
-A translate app built with OpenAI API
+Translate is a web application that utilizes the OpenAI API to translate an English phrase into other languages. OpenAI provides the ability to virtually solve nearly any task that involves language processing. The OpenAI API offers a spectrum of models to choose from, suitable for a variety of tasks that a user may want to accomplish. Within this application, we send a prompt to the API requesting an English phrase to be translated into multiple languages. It then gives us the response which we display to the user. 
